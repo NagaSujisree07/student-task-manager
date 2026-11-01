@@ -6,10 +6,11 @@ Built with **ReactJS (Vite)**, **HTML**, **CSS**, **JavaScript**, **NodeJS**, **
 
 ---
 
-## 🔗 Links
+## 🔗 Project Links
 
 - **GitHub Repository**: [https://github.com/NagaSujisree07/student-task-manager](https://github.com/NagaSujisree07/student-task-manager)
-- **Live Deployment**: *[Deploy on Vercel / Render](https://github.com/NagaSujisree07/student-task-manager#2-deploy-frontend-to-vercel)*
+- **Live Application (Frontend)**: [https://student-task-manager.vercel.app](https://student-task-manager.vercel.app) *(or your deployed Vercel domain)*
+- **Live Backend API**: [https://student-task-manager-api.onrender.com](https://student-task-manager-api.onrender.com) *(Render Web Service)*
 
 ---
 
