@@ -3,7 +3,20 @@
  * Communicates with backend Express REST API
  */
 
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:5000/api';
+/**
+ * Normalize API Base URL:
+ * Ensures it gracefully handles trailing slashes or omitted '/api'
+ */
+const getApiBaseUrl = () => {
+  let url = (import.meta.env.VITE_API_BASE_URL || 'http://localhost:5000/api').trim();
+  url = url.replace(/\/+$/, ''); // remove trailing slash
+  if (!url.endsWith('/api')) {
+    url = `${url}/api`;
+  }
+  return url;
+};
+
+const API_BASE_URL = getApiBaseUrl();
 
 /**
  * Handle API response and check for HTTP errors
